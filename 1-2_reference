@@ -1,0 +1,16 @@
+#include <cstdio>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+	int nData=10;
+	
+	//참조자 선언
+	int &ref = nData;
+	
+	//참조자를 변경하면 원본도 변경된다!!
+	ref=20;
+	
+	cout << nData << endl;
+}
