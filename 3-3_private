@@ -1,0 +1,22 @@
+#include <cstdio>
+#include <iostream>
+using namespace std;
+
+class CMyData
+{
+	int nData;
+	
+	public :
+	int GetData(void) {return nData;}
+	void SetData(int nParam) {nData=nParam;}
+	
+};
+
+int main(int argc, char *argv[])
+{
+	CMyData data;
+	
+	data.SetData(10);
+	
+	cout << data.GetData() << endl;
+}
