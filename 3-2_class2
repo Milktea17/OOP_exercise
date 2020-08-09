@@ -1,0 +1,27 @@
+#include <cstdio>
+#include <iostream>
+using namespace std;
+
+class CTest{
+	public:
+	
+	int nData; //책에서는 선언을 정의 뒤에 해줬는데..
+	
+	CTest(){
+		nData=10;
+	}
+	
+	void PrintData(void);
+};
+
+void CTest::PrintData(void)
+{
+	cout << nData << endl;
+}
+
+int main(int argc, char *argv[])
+{
+	CTest t;
+	t.PrintData();
+	return 0;
+}
