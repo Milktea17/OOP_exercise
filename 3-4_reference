@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 	a = 20; //참조 원본 수정
 	cout << t.GetData() << endl; // result : 20 -> 참조값이 변경돼서 아웃풋도 변경됨
 
-	return 0;
+	return 0; 
 }
 
