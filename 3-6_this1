@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+class CMyData {
+
+	int m_nData;
+
+public :
+	CMyData(int nParam) : m_nData(nParam) {}
+	
+	void PrintData() 
+	{
+		cout << m_nData << endl;
+
+		cout << CMyData::m_nData << endl;
+
+		cout << this->m_nData << endl; // 메서드를 호출한 인스턴스의 m_nData값을 출력(a의, b의)
+
+		cout << this->CMyData::m_nData << endl;// 메서드를 호출한 인스턴스의 CMyData클래스의 m_nData값을 출력
+	}
+
+};
+
+int main(int argc, char * grgv[])
+{
+	CMyData a(5), b(10);
+
+	a.PrintData();
+	b.PrintData();
+}
